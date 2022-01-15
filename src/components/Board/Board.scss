@@ -1,0 +1,31 @@
+.board {
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 10px;
+
+  &__list {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    min-height: 500px;
+    padding: 5px;
+    width: max-content;
+  }
+
+  &__item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 18px;
+    padding: 5px;
+    user-select: none;
+    min-width: 200px;
+  }
+}
