@@ -25,6 +25,9 @@ export const Board = () => {
                     ref={provided.innerRef}
                     {...provided.droppableProps}
                   >
+                    <div className="board__list-title">
+                      {list.name}
+                    </div>
                     { list.items?.map((item, index) => {
                       return (
                         <Draggable key={item.id} draggableId={item.id} index={index}>

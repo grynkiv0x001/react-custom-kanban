@@ -11,4 +11,12 @@ export const listsFromAPI = {
     name: 'Todo',
     items: itemsFromAPI,
   },
+  [uuid()]: {
+    name: 'In Progress',
+    items: itemsFromAPI,
+  },
+  [uuid()]: {
+    name: 'Done',
+    items: itemsFromAPI,
+  },
 };

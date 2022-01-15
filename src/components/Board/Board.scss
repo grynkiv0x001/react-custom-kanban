@@ -1,11 +1,26 @@
 .board {
   box-sizing: border-box;
   display: flex;
+  gap: 30px;
   height: 100vh;
-  justify-content: center;
+  margin-top: 30px;
   padding: 10px;
+  
+  &:first-child {
+    margin-left: 50px;
+  }
 
   &__list {
+
+    &-title {
+      font-family: monospace;
+      font-size: 18px;
+      font-weight: bold;
+      padding-top: 10px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
     background-color: #eee;
     border: 1px solid #ccc;
     border-radius: 5px;
